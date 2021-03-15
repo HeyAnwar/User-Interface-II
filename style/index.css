@@ -158,3 +158,47 @@ footer{
 footer h3{
     font-size: 5rem;
 }
+
+/* Media Queries */
+
+/* Tablet */
+@media(max-width:800px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .name, .links{
+        width: 100%;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .bio{
+        margin-top: 14%;
+    }
+}
+
+/* Phone */
+@media(max-width:500px){
+    .bio{
+        display: flex;
+        flex-direction: column;
+        margin-top: 26%;
+    }
+    .smallname{
+        text-align: center;
+    }
+    .smallname a{
+        margin-left: 40%;
+    }
+    #row1, #row2{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .project{
+        width:46%;
+    }
+}
